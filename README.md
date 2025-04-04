@@ -27,12 +27,9 @@ Examples of EPROMs and how many games they can hold:
 | 128KB | 27C010<br>27C1001<br>27C1000 | 1 | / | / |
 | 256KB | 27C020<br>27C2001<br>27C2000 | 2 | 1 | / |
 | 512KB | 27C040<br>27C4001<br>27C4000 | 4 | 2 | 1 |
-| 1MBB | 27C080<br>27C801 | 8 | 4 | 2 |
+| 1MB | 27C080<br>27C801 | 8 | 4 | 2 |
 
 Other EPROMs may work if they are fully compatible with those types. 
-
-### Limitations
-
 
 
 ## PCB configuration

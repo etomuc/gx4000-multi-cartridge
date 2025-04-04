@@ -45,5 +45,10 @@ First, check what the size of the games is that you want to store on a multi-car
 
 It's not possible to mix different ROM sizes on the same EPROM. E.g. you can't select two 128K games and a 256K game and burn it onto the same EPROM to get a 3 games cartridge. <sup>If you are ever in such a situation, where it's not possible to have a collection of gaes with the same size you can fill up a 128K rom with 128K additional, empty space to bring it to 256K and then burn it together with another 256K game, as if both would be 256K.</sup>  
 
-This means, depending on what ROMs you want to burn to your ROM and what EPROM you have chosen, you can burn up to 8 cartridge ROMs on a single EPROM (e.g. EPROM 27C080 with 8 original GX4000 game ROMS).
+If you have selected game ROMs with 
+- 128KB, then add the resistors for <b>A17,A18 and A19</b>
+- 256KB, then add the resistors for <b>A18 and A19</b> and close the link for 256K ROMs (LK4).
+- 512KB, then add the resistors for <b>A19</b> and close the links for 512K ROMs (LK2 <b>and</b> LK4).
+
+<img src="/pictures/multicart_LKbridges.jpg" width="1200"/>
 

@@ -32,7 +32,7 @@ For a full assembly you need
 | IC EPROM 128K - 1MB<br><sup>See "PCB configuration" below  | 1 |
 | IC 74AC112 or 74F112<br><sup>maybe also 74HC(T)112[^1]</sup>| 1 |
 | Dip-Switch (1,2 or 3 switches)<br><sup>See "Supported Eproms" below | 1 <br><sup>(or 0)</sup> |
-| Capacitor 100nF 104 5mm | 3 |
+| Capacitor 100nF 104 5mm | 2 |
 | Capacitor <b>100pF</b> 104 5mm | 1 |
 | Resistor 4.7k 1/4W | 3 - 5 |
 

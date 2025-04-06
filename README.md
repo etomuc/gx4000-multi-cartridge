@@ -5,10 +5,7 @@
 - Put up to 8 games on a single cartridge
 - Selection via dip switches
 - same PCB size as original cartridges
-- https://www.cpcwiki.eu/forum/amstrad-cpc-hardware/amstrad-gx4000-plus-cartridge-pcb/msg210695/#msg210695
-- no ACID required (implements noACID patch based on [Shinings design]([https://www.cpcwiki.eu/forum/amstrad-cpc-hardware/amstrad-gx4000-plus-cartridge-pcb/msg210695/#msg210695]) )
-
-- [Shining]([url](https://www.cpcwiki.eu/forum/amstrad-cpc-hardware/amstrad-gx4000-plus-cartridge-pcb/msg210695/#msg210695))
+- no ACID required (implements noACID patch based on [Shinings design](https://www.cpcwiki.eu/forum/amstrad-cpc-hardware/amstrad-gx4000-plus-cartridge-pcb/msg210695/#msg210695)
 
 ## Multi-cartridges
 

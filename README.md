@@ -49,7 +49,7 @@ Note: Using sockets is possible but if you want to put the cartridge into a 3D p
 1) program the EPROM <sup>(see "Rom configuration" below)</sup>
 2) solder the EPROM and the 74xx112 IC directly to the PCB
 3) continue with the required resistors and close the respective LK joints <sup>check the "PCB configuration" section below </sup>
-4) add all capacitors
+4) add all capacitors. Pay attention that one capacitor is 100pF, two are 100nF.
 5) finally add the DIP switch
 
 A 3D printable case shell can be found in the "files" folder. 

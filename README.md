@@ -4,8 +4,11 @@
 
 - Put up to 8 games on a single cartridge
 - Selection via dip switches
-- fits into standard cartridge shells
-- noACID patch (does not require ACID/FPGA) based on Shinings design ()
+- same PCB size as original cartridges
+- https://www.cpcwiki.eu/forum/amstrad-cpc-hardware/amstrad-gx4000-plus-cartridge-pcb/msg210695/#msg210695
+- no ACID required (implements noACID patch based on [Shinings design]([https://www.cpcwiki.eu/forum/amstrad-cpc-hardware/amstrad-gx4000-plus-cartridge-pcb/msg210695/#msg210695]) )
+
+- [Shining]([url](https://www.cpcwiki.eu/forum/amstrad-cpc-hardware/amstrad-gx4000-plus-cartridge-pcb/msg210695/#msg210695))
 
 ## Multi-cartridges
 
@@ -56,3 +59,21 @@ Which DIP switches need to be populated depends on the size of your game ROMs an
 You need a DIP switch where both criteria are fulfilled: 
 - your EPROM is at least the size indicated on the PCB below the DIP switch
 - below that DIP switch is a resistor
+
+<img src="/pictures/multicart_pcbconfig.jpg" width="1200"/>
+
+## ROM configuration
+
+GX4000 cartridge ROMs are usually provided as a .CPR file. To burn such a cartridge file to an EPROM the CPR first has to be converted into a pure binary ROM image. You can use CPRTools for this task: http://www.cpcmania.com/cprtools/cprtools.htm
+
+If you are burning only a single game to your EPROM you are already set after the conversion. 
+
+If you want to burn more than a single game to the EPROM make sure to convert all CPRs to ROM files. After that you need to combine all ROMs into a single, large ROM. This can be done with various tools. On Windows you can e.g. use the COPY command in command prompt. 
+
+Example: 
+Let's assume you want to burn 4 games with 128K each into a single 27C040 EPROM. The game ROMs have the names copter.rom, kickbox.rom, pinball.rom and switch.rom. Make sure all .rom files are in the same folder. Open command prompt in this folder and enter: 
+
+<code>copy /b copter.rom+kickbox.rom+pinball.rom+switch.rom 4gamesin1.rom</code>
+
+
+This will give you a file "4gamesin1.rom" with a size of exactly 512KB (524,800 Bytes) that you can burn to your 27C040 EPROM.

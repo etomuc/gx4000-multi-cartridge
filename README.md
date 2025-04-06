@@ -19,20 +19,37 @@ For a full assembly you need
 | Part | Quantity |
 | --- | --- |
 | PCB | 1 |
+| IC EPROM 128K - 1MB<br><sup>See "PCB configuration" below  | 1 |
 | IC 74AC112 or 74F112<br><sup>maybe also 74HC(T)112[^1]</sup>| 1 |
-| Dip-Switch (1,2 or 3 switches)<br> <sup>See "PCB configuration" below | 1 <br><sup>(or 0)</sup> |
-| Capacitor 100nF 104 5.12mm | 3 |
-| Capacitor <b>100pF</b> 104 5.12mm | 1 |
+| Dip-Switch (1,2 or 3 switches)<br><sup>See "Supported Eproms" below | 1 <br><sup>(or 0)</sup> |
+| Capacitor 100nF 104 5mm | 3 |
+| Capacitor <b>100pF</b> 104 5mm | 1 |
 | Resistor 4.7k 1/4W | 3 - 5 |
 
 [^1]: AC or F is recommended as they are faster than HC(T) types, however several users have reported that 74HC(T)112 perfectly work
 
+### PCB
 
+You can order PCBs easily here: https://www.pcbway.com/project/shareproject/...
 
+### Assembly
+
+Note: Using sockets is possible but if you want to put the cartridge into a 3D printed shell you need to solder the ICs directly to the PCB without sockets.
+
+1) program the EPROM <sup>(see "Rom configuration" below)</sup>
+2) solder the EPROM and the 74xx112 IC directly to the PCB
+3) continue with the required resistors and close the respective LK joints <sup>check the "PCB configuration" section below </sup>
+4) add all capacitors
+5) finally add the DIP switch
+
+A 3D printable case shell can be found in the "files" folder. 
+   
 ## Multi-cartridges
 
 An GX4000 / Amstrad Plus cartridge typically[^2] holds a ROM/EPROM with 128KB, 256KB or 512KB of data. E.g. all original GX4000 games were using 128K ROMs while more recent released can hold up to 512K, like "La Culotte de Zelda".
+
 [^2]: It also supports ROMs with 32 or 64KB, but this is rarely used and not implemented on this cartridge. For cartridge details see here: https://www.cpcwiki.eu/index.php/GX4000_cartridge
+
 Multi-Cartridges have been available for many years now, the most famous probably being the 32-in-1 which holds all original, commercial releases for the GX4000. A multi-cartridge usually holds one or more EPROMs that can store more than a single game and offers to select between the games via switches. While the 32-in-1 is a nice thing, it's biggest downside is, that it is much bigger than an original cartridge and doesn't even fit into a Plus. 
 
 The cartridge here resembles the dimensions of the original cartridge PCB and fits into a standard cartridge case. It can hold up to 8 games, depending on the selected games and EPROMs. 

@@ -36,7 +36,7 @@ Other EPROMs may work if they are fully compatible with those types.
 
 The PCB has been designed to be flexible and handle all kinds of combinations of game size and EPROM size. This requires that the assembly and soldering slightly differs, depending on the selected combination. 
 
-### ROM size
+### ROM size - LK links 2,4 and resistors 1-3
 
 First, check what the size of the games is that you want to store on a multi-cartridge. Make sure all games have the same size, e.g. 128K like the original GX4000 games had. 
 
@@ -49,3 +49,10 @@ If you have selected game ROMs with
 
 <img src="/pictures/multicart_LKbridges.jpg" width="1200"/>
 
+### Game selector - dip switches
+
+Which DIP switches need to be populated depends on the size of your game ROMs and the size of your EPROM.
+
+You need a DIP switch where both criteria are fulfilled: 
+- your EPROM is at least the size indicated on the PCB below the DIP switch
+- below that DIP switch is a resistor

@@ -8,6 +8,8 @@ Multi-Cartridges have been available for many years now, the most famous probabl
 
 The cartridge here resembles the dimensions of the original cartridge PCB and fits into a standard cartridge case. It can hold up to 8 games on a single EPROM (depending on the selected games and EPROM types). 
 
+<img src="/pictures/pcb.jpg" width="300"/>
+
 ## Features
 
 - Put up to 8 games on a single cartridge

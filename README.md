@@ -75,12 +75,15 @@ The PCB has been designed to be flexible and handle all kinds of combinations of
 
 First, check what the size of the games is that you want to store on a multi-cartridge. Make sure all games have the same size, e.g. 128K like the original GX4000 games had. 
 
-It's not possible to mix different ROM sizes on the same EPROM. E.g. you can't select two 128K games and a 256K game and burn it onto the same EPROM to get a 3 games cartridge. <sup>If you are ever in such a situation, where it's not possible to have a collection of gaes with the same size you can fill up a 128K rom with 128K additional, empty space to bring it to 256K and then burn it together with another 256K game, as if both would be 256K.</sup>  
+It's not possible to mix different ROM sizes on the same EPROM[^3]. E.g. you can't select two 128K games and a 256K game and burn it onto the same EPROM to get a 3 games cartridge.
+[^3]:If you are ever in such a situation, where it's not possible to have a collection of gaes with the same size you can fill up a 128K rom with 128K additional, empty space to bring it to 256K and then burn it together with another 256K game, as if both would be 256K.
 
 If you have selected game ROMs with 
 - 128KB, then add the resistors <b>1,2 and 3</b>. Don't close any link.
-- 256KB, then add the resistors <b>2 and 3</b> and close the link for 256K ROMs (LK4).
-- 512KB, then add only the resistor <b>3</b> and close both links for 512K ROMs (LK2 <b>and</b> LK4).
+- 256KB, then add the resistors <b>2 and 3</b> and close the link for 256K ROMs (LK4[^4]).
+- 512KB, then add only the resistor <b>3</b> and close both links for 512K ROMs (LK2 <b>and</b> LK4[^4]).
+
+[^4]: Why 2 and 4 but there is no 1 or 3? They have been named according to the LK IDs on the original cartridge PCB. 
 
 <img src="/pictures/multicart_LKbridges.jpg" width="1200"/>
 

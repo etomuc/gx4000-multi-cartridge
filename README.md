@@ -33,7 +33,7 @@ For a full assembly you need
 | IC 74AC112 or 74F112<br><sup>maybe also 74HC(T)112[^1]</sup>| 1 |
 | Dip-Switch (1,2 or 3 switches)<br><sup>See "Supported Eproms" below | 1 <br><sup>(or 0)</sup> |
 | Capacitor 100nF 104 5mm | 2 |
-| Capacitor <b>100pF</b> 104 5mm | 1 |
+| Capacitor <b>100pF</b> 101 5mm | 1 |
 | Resistor 4.7k 1/4W | 3 - 5 |
 
 [^1]: AC or F is recommended as they are faster than HC(T) types, however several users have reported that 74HC(T)112 perfectly work
@@ -87,8 +87,6 @@ If you have selected game ROMs with
 
 [^4]: Why 2 and 4 but there is no 1 or 3? They have been named according to the LK IDs on the original cartridge PCB. 
 
-<img src="/pictures/multicart_LKbridges.jpg" width="1200"/>
-
 ### Game selector - dip switches
 
 Which DIP switches need to be populated depends on the size of your game ROMs and the size of your EPROM.
@@ -96,6 +94,8 @@ Which DIP switches need to be populated depends on the size of your game ROMs an
 You need a DIP switch where both criteria are fulfilled: 
 - your EPROM is at least the size indicated on the PCB below the DIP switch
 - below that DIP switch is a resistor
+
+<b>See all possible combinations of LK bridges, resistors and DIP switches here:</b>
 
 <img src="/pictures/multicart_pcbconfig.jpg" width="1200"/>
 

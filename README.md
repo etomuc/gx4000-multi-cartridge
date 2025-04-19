@@ -1,4 +1,4 @@
-# Amstrad GX4000 / Plus Multi-Cartridge with up to 8 ROM slots
+# Multi-Cartridge with up to 8 ROM slots<br>for Amstrad GX4000 / Amstrad Plus 
 
 An GX4000 / Amstrad Plus cartridge typically[^2] holds a ROM/EPROM with 128KB, 256KB or 512KB of data. E.g. all original GX4000 games were using 128K ROMs but more recent released games often need more storage and can hold up to 512K, like e.g. "La Culotte de Zelda".
 

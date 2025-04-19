@@ -48,7 +48,7 @@ For a full assembly you need
 
 ### PCB
 
-You can order PCBs easily here: https://www.pcbway.com/project/shareproject/...
+You can order PCBs easily here: https://www.pcbway.com/project/shareproject/Amstrad_GX4000_Multi_ROM_cartridge_9637c211.html
 
 ### Assembly
 

@@ -17,6 +17,14 @@ The cartridge here resembles the dimensions of the original cartridge PCB and fi
 - same PCB size as original cartridges
 - no ACID required (implements noACID patch based on [Shinings design](https://www.cpcwiki.eu/forum/amstrad-cpc-hardware/amstrad-gx4000-plus-cartridge-pcb/msg210695/#msg210695))
 
+## License
+
+The project is released under the CC BY-NC-ND 4.0 license with the following enhancements: The cartridge and all resources are free to use for personal use. 
+Selling a cartridge based on this PCB in any form commercially is strongly forbidden. The only exception are homebrew productions if the copyright holders of the 
+software included on the cartridge have given their official permission for a commercial production. 
+
+In other words: don't use this PCB for your bootlegs and piracy cartridges. 
+
 ## Building a cartridge
 
 For a full assembly you need 

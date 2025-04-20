@@ -59,7 +59,7 @@ For a full assembly you need
 
 [^1]: AC or F is recommended as they are faster than HC(T) types, however several users have reported that 74HC(T)112 perfectly work
 
-It's possible to use a socket for the EPROM however it will no longer fit into a normal cartridge shell. 
+It's possible to use a socket for the EPROM however it will no longer fit into a cartridge shell. 
 
 ### PCB
 

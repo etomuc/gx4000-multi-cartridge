@@ -23,7 +23,7 @@ The project is released under the CC BY-NC-ND 4.0 license with the following enh
 Selling a cartridge based on this PCB in any form commercially is strongly forbidden. The only exception are homebrew productions if the copyright holders of the 
 software included on the cartridge have given their official permission for a commercial production. 
 
-In other words: don't use this PCB for your bootlegs and piracy cartridges. 
+In other words: don't use this PCB if you want to make money with bootleg and piracy cartridges. 
 
 ### Disclaimer
 

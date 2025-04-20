@@ -10,6 +10,9 @@ The cartridge here resembles the dimensions of the original cartridge PCB and fi
 
 <img src="/pictures/pcb.jpg" width="300"/>
 
+> [!TIP]
+> Although this documentation talks about game ROMs you can of course also put applications and OS in each of the ROM slots. This way you can e.g. create your personal boot-cartridge for all language variations or with/without Parados, or with/without Burniung Rubber ,or with SymbOS as an alternative OS, or Firmware 3.x , or ... 
+
 ## Features
 
 - Put up to 8 games on a single cartridge
@@ -98,7 +101,7 @@ The 29F040 EEPROM can be used with slight modifications (see below).
 
 The PCB has been designed to be flexible and handle all kinds of combinations of game size and EPROM size. This requires that the assembly and soldering slightly differs, depending on the selected combination. 
 
-### ROM size - LK links 2,4 and resistors 1-3
+### LK links 2,4 and resistors 1-3 (ROM size)
 
 First, check what the size of the games is that you want to store on a multi-cartridge. Make sure all games have the same size, e.g. 128K like the original GX4000 games had. 
 
@@ -112,7 +115,7 @@ If you have selected game ROMs with
 
 [^4]: Why 2 and 4 but there is no 1 or 3? They have been named according to the LK IDs on the original cartridge PCB. 
 
-### Game selector - dip switches
+### Dip switches (ROM/Game selection)
 
 Which DIP switches need to be populated depends on the size of your game ROMs and the size of your EPROM.
 
@@ -124,7 +127,7 @@ You need a DIP switch where both criteria are fulfilled:
 
 <img src="/pictures/multicart_pcbconfig.jpg" width="1200"/>
 
-## ROM configuration - combine game ROMs
+## Combine game ROMs to burn a single binary into an EPROM
 
 GX4000 cartridge ROMs are usually provided as a .CPR file. To burn such a cartridge file to an EPROM the CPR first has to be converted into a pure binary ROM image. You can use CPRTools for this task: http://www.cpcmania.com/cprtools/cprtools.htm
 
@@ -138,6 +141,20 @@ Let's assume you want to burn 4 games with 128K each into a single 27C040 EPROM.
 <code>copy /b copter.rom+kickbox.rom+pinball.rom+switch.rom 4gamesin1.rom</code>
 
 This will give you a file "4gamesin1.rom" with a size of exactly 512KB (524,800 Bytes) that you can burn to your 27C040 EPROM.
+
+> [!IMPORTANT]
+> All your source ROMs must have exactly 128K, 256K or 512K and the resulting file must be exactly 256K, 512K or 1MB. Even the slightest deviation will most likely result in corrupt EPROM content.
+
+## Game selection
+
+If everything works well, you can now start your GX4000 with an 8-in-1 games cartridge. 
+
+You can select which game to play using the DIP switches on top of the cartridge. 
+
+<img src="/pictures/selectromposition.jpg" width="1200"/>
+
+> [!IMPORTANT]
+> NEVER switch games/roms while your GX4000/Plus is turned on. Always turn off before switching to another position. 
 
 ### Using a 29F040 EEPROM 
 

@@ -25,6 +25,19 @@ software included on the cartridge have given their official permission for a co
 
 In other words: don't use this PCB for your bootlegs and piracy cartridges. 
 
+### Disclaimer
+
+> [!CAUTION]
+>**USE AT YOUR OWN RISK.**
+>
+>This is a hobby project, I am a hobbyist and no engineer. There is always the risk that the cartridge can cause harm to your computer/console. 
+>Although I have tested the cartrdidge on my Plus and GX4000 with many different EPROMS, there is no guarantee that it will properly work under all circumstances.
+>
+> Especially if you are building this for others (commercially or not) make sure to make your own intense tests to guarentee this cartridge works as expected before handing over to the recipients.  
+>
+>**USE AT YOUR OWN RISK.** 
+
+
 ## Building a cartridge
 
 For a full assembly you need 
@@ -79,6 +92,8 @@ Examples of EPROMs and how many games they can hold:
 
 Other EPROMs may work if they are fully compatible with those types. 
 
+The 29F040 EEPROM can be used with slight modifications (see below).
+
 ## PCB configuration
 
 The PCB has been designed to be flexible and handle all kinds of combinations of game size and EPROM size. This requires that the assembly and soldering slightly differs, depending on the selected combination. 
@@ -122,5 +137,23 @@ Let's assume you want to burn 4 games with 128K each into a single 27C040 EPROM.
 
 <code>copy /b copter.rom+kickbox.rom+pinball.rom+switch.rom 4gamesin1.rom</code>
 
-
 This will give you a file "4gamesin1.rom" with a size of exactly 512KB (524,800 Bytes) that you can burn to your 27C040 EPROM.
+
+### Using a 29F040 EEPROM 
+
+> [!CAUTION]
+>This mod is based on the data sheet and has not been verified yet. Please verify its correctness before using the cartridge in a computer/console. 
+
+The 29F040 EEPROM has a slightly different pin layout but you can use this EEPROM similar to a 512K EPROM with these slight modifications: 
+
+<b>On the bottom of the PCB:</b>
+
+1) Cut one trace at the indicated location:
+<img src="/pictures/29F040bottom.jpg" height="300px"/>
+   
+<b>On the top of the PCB:</b>
+
+2) Don't add resistor 3 at it's normal position but below as indicated.
+3) Make a junction between resistor 2 and 3 as indicated.
+
+<img src="/pictures/29F040top.jpg" height="300px"/>

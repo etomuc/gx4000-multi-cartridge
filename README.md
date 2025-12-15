@@ -60,7 +60,7 @@ For a full assembly you need
 | Capacitor <b>100pF</b> 101 5mm | 1 |
 | Resistor 4.7k 1/4W | 3 - 5 |
 
-[^1]: AC or F is recommended as they are faster than HC(T) types, however several users have reported that 74HC(T)112 perfectly work
+[^1]: AC(T) or F is recommended as they are faster than HC(T) types, however several users have reported that 74HC(T)112 perfectly work
 
 It's possible to use a socket for the EPROM however it will no longer fit into a cartridge shell. 
 
@@ -126,6 +126,9 @@ You need a DIP switch where both criteria are fulfilled:
 <b>See all possible combinations of LK bridges, resistors and DIP switches here:</b>
 
 <img src="/pictures/multicart_pcbconfig.jpg" width="1200"/>
+
+- Red bars are solder bridges. Close these bridges with solder and/or wire to ensure proper functionality.
+- You can also burn a single ROM into a larger EPROM, e.g. a 128K game into a 512K EPROM. For those cases just chose the config as if the EPROM would have the right size (e.g. 128K/128K or 512K/512K).
 
 ## Combine game ROMs to burn a single binary into an EPROM
 

@@ -68,6 +68,8 @@ It's possible to use a socket for the EPROM however it will no longer fit into a
 
 You can order PCBs easily here: https://www.pcbway.com/project/shareproject/Amstrad_GX4000_Multi_ROM_cartridge_9637c211.html
 
+Note: For easier insertion select 30° beveling for the edge connector. 
+
 ### Assembly
 
 Note: Using sockets is possible but if you want to put the cartridge into a 3D printed shell you need to solder the ICs directly to the PCB without sockets.

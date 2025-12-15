@@ -58,7 +58,7 @@ For a full assembly you need
 | Dip-Switch (1,2 or 3 switches)<br><sup>See "Supported Eproms" below | 1 <br><sup>(or 0)</sup> |
 | Capacitor 100nF 104 5mm | 2 |
 | Capacitor <b>100pF</b> 101 5mm | 1 |
-| Resistor 4.7k 1/4W | 3 - 5 |
+| Resistor 4.7k 1/4W | 2 - 5 |
 
 [^1]: AC(T) or F is recommended as they are faster than HC(T) types, however several users have reported that 74HC(T)112 perfectly work
 
